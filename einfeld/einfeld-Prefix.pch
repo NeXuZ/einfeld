@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'einfeld' target in the 'einfeld' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif

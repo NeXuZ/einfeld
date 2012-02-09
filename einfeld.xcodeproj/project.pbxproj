@@ -1,0 +1,445 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		636E94FB14E34ADE0020682E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 636E94FA14E34ADE0020682E /* Cocoa.framework */; };
+		636E950514E34ADE0020682E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 636E950314E34ADE0020682E /* InfoPlist.strings */; };
+		636E950714E34ADE0020682E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 636E950614E34ADE0020682E /* main.m */; };
+		636E950B14E34ADE0020682E /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 636E950914E34ADE0020682E /* Credits.rtf */; };
+		636E950E14E34ADE0020682E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 636E950D14E34ADE0020682E /* AppDelegate.m */; };
+		636E951114E34ADF0020682E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 636E950F14E34ADF0020682E /* MainMenu.xib */; };
+		636E951914E34ADF0020682E /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 636E951814E34ADF0020682E /* SenTestingKit.framework */; };
+		636E951A14E34ADF0020682E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 636E94FA14E34ADE0020682E /* Cocoa.framework */; };
+		63703BC914E3563500C4D4A5 /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63703BC814E3563500C4D4A5 /* AppController.m */; };
+		63703BD014E36C8900C4D4A5 /* EinFeld.m in Sources */ = {isa = PBXBuildFile; fileRef = 63703BCF14E36C8900C4D4A5 /* EinFeld.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		636E951B14E34ADF0020682E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 636E94ED14E34ADE0020682E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 636E94F514E34ADE0020682E;
+			remoteInfo = einfeld;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		636E94F614E34ADE0020682E /* einfeld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = einfeld.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		636E94FA14E34ADE0020682E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		636E94FD14E34ADE0020682E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		636E94FE14E34ADE0020682E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		636E94FF14E34ADE0020682E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		636E950214E34ADE0020682E /* einfeld-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "einfeld-Info.plist"; sourceTree = "<group>"; };
+		636E950414E34ADE0020682E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		636E950614E34ADE0020682E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		636E950814E34ADE0020682E /* einfeld-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "einfeld-Prefix.pch"; sourceTree = "<group>"; };
+		636E950A14E34ADE0020682E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		636E950C14E34ADE0020682E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		636E950D14E34ADE0020682E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		636E951014E34ADF0020682E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		636E951714E34ADF0020682E /* einfeldTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = einfeldTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		636E951814E34ADF0020682E /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		63703BC714E3563500C4D4A5 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
+		63703BC814E3563500C4D4A5 /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
+		63703BCE14E36C8900C4D4A5 /* EinFeld.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EinFeld.h; sourceTree = "<group>"; };
+		63703BCF14E36C8900C4D4A5 /* EinFeld.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EinFeld.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		636E94F314E34ADE0020682E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				636E94FB14E34ADE0020682E /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		636E951314E34ADF0020682E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				636E951914E34ADF0020682E /* SenTestingKit.framework in Frameworks */,
+				636E951A14E34ADF0020682E /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		636E94EB14E34ADE0020682E = {
+			isa = PBXGroup;
+			children = (
+				636E950014E34ADE0020682E /* einfeld */,
+				636E94F914E34ADE0020682E /* Frameworks */,
+				636E94F714E34ADE0020682E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		636E94F714E34ADE0020682E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				636E94F614E34ADE0020682E /* einfeld.app */,
+				636E951714E34ADF0020682E /* einfeldTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		636E94F914E34ADE0020682E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				636E94FA14E34ADE0020682E /* Cocoa.framework */,
+				636E951814E34ADF0020682E /* SenTestingKit.framework */,
+				636E94FC14E34ADE0020682E /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		636E94FC14E34ADE0020682E /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				636E94FD14E34ADE0020682E /* AppKit.framework */,
+				636E94FE14E34ADE0020682E /* CoreData.framework */,
+				636E94FF14E34ADE0020682E /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		636E950014E34ADE0020682E /* einfeld */ = {
+			isa = PBXGroup;
+			children = (
+				63703BC414E34E9600C4D4A5 /* Classes */,
+				63703BC614E34EA400C4D4A5 /* Interfaces */,
+				636E950114E34ADE0020682E /* Supporting Files */,
+			);
+			path = einfeld;
+			sourceTree = "<group>";
+		};
+		636E950114E34ADE0020682E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				636E950214E34ADE0020682E /* einfeld-Info.plist */,
+				636E950314E34ADE0020682E /* InfoPlist.strings */,
+				636E950614E34ADE0020682E /* main.m */,
+				636E950814E34ADE0020682E /* einfeld-Prefix.pch */,
+				636E950914E34ADE0020682E /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		63703BC414E34E9600C4D4A5 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				636E950C14E34ADE0020682E /* AppDelegate.h */,
+				636E950D14E34ADE0020682E /* AppDelegate.m */,
+				63703BC714E3563500C4D4A5 /* AppController.h */,
+				63703BC814E3563500C4D4A5 /* AppController.m */,
+				63703BCE14E36C8900C4D4A5 /* EinFeld.h */,
+				63703BCF14E36C8900C4D4A5 /* EinFeld.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		63703BC614E34EA400C4D4A5 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				636E950F14E34ADF0020682E /* MainMenu.xib */,
+			);
+			name = Interfaces;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		636E94F514E34ADE0020682E /* einfeld */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 636E952814E34ADF0020682E /* Build configuration list for PBXNativeTarget "einfeld" */;
+			buildPhases = (
+				636E94F214E34ADE0020682E /* Sources */,
+				636E94F314E34ADE0020682E /* Frameworks */,
+				636E94F414E34ADE0020682E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = einfeld;
+			productName = einfeld;
+			productReference = 636E94F614E34ADE0020682E /* einfeld.app */;
+			productType = "com.apple.product-type.application";
+		};
+		636E951614E34ADF0020682E /* einfeldTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 636E952B14E34ADF0020682E /* Build configuration list for PBXNativeTarget "einfeldTests" */;
+			buildPhases = (
+				636E951214E34ADF0020682E /* Sources */,
+				636E951314E34ADF0020682E /* Frameworks */,
+				636E951414E34ADF0020682E /* Resources */,
+				636E951514E34ADF0020682E /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				636E951C14E34ADF0020682E /* PBXTargetDependency */,
+			);
+			name = einfeldTests;
+			productName = einfeldTests;
+			productReference = 636E951714E34ADF0020682E /* einfeldTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		636E94ED14E34ADE0020682E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = Privat;
+			};
+			buildConfigurationList = 636E94F014E34ADE0020682E /* Build configuration list for PBXProject "einfeld" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 636E94EB14E34ADE0020682E;
+			productRefGroup = 636E94F714E34ADE0020682E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				636E94F514E34ADE0020682E /* einfeld */,
+				636E951614E34ADF0020682E /* einfeldTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		636E94F414E34ADE0020682E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				636E950514E34ADE0020682E /* InfoPlist.strings in Resources */,
+				636E950B14E34ADE0020682E /* Credits.rtf in Resources */,
+				636E951114E34ADF0020682E /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		636E951414E34ADF0020682E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		636E951514E34ADF0020682E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		636E94F214E34ADE0020682E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				636E950714E34ADE0020682E /* main.m in Sources */,
+				636E950E14E34ADE0020682E /* AppDelegate.m in Sources */,
+				63703BC914E3563500C4D4A5 /* AppController.m in Sources */,
+				63703BD014E36C8900C4D4A5 /* EinFeld.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		636E951214E34ADF0020682E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		636E951C14E34ADF0020682E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 636E94F514E34ADE0020682E /* einfeld */;
+			targetProxy = 636E951B14E34ADF0020682E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		636E950314E34ADE0020682E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				636E950414E34ADE0020682E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		636E950914E34ADE0020682E /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				636E950A14E34ADE0020682E /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		636E950F14E34ADF0020682E /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				636E951014E34ADF0020682E /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		636E952614E34ADF0020682E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		636E952714E34ADF0020682E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		636E952914E34ADF0020682E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "einfeld/einfeld-Prefix.pch";
+				INFOPLIST_FILE = "einfeld/einfeld-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		636E952A14E34ADF0020682E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "einfeld/einfeld-Prefix.pch";
+				INFOPLIST_FILE = "einfeld/einfeld-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		636E952C14E34ADF0020682E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/einfeld.app/Contents/MacOS/einfeld";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "einfeld/einfeld-Prefix.pch";
+				INFOPLIST_FILE = "einfeldTests/einfeldTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		636E952D14E34ADF0020682E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/einfeld.app/Contents/MacOS/einfeld";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "einfeld/einfeld-Prefix.pch";
+				INFOPLIST_FILE = "einfeldTests/einfeldTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		636E94F014E34ADE0020682E /* Build configuration list for PBXProject "einfeld" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				636E952614E34ADF0020682E /* Debug */,
+				636E952714E34ADF0020682E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		636E952814E34ADF0020682E /* Build configuration list for PBXNativeTarget "einfeld" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				636E952914E34ADF0020682E /* Debug */,
+				636E952A14E34ADF0020682E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		636E952B14E34ADF0020682E /* Build configuration list for PBXNativeTarget "einfeldTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				636E952C14E34ADF0020682E /* Debug */,
+				636E952D14E34ADF0020682E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 636E94ED14E34ADE0020682E /* Project object */;
+}
