@@ -16,6 +16,7 @@
 @synthesize avF;
 @synthesize slider;
 @synthesize einFeld = _einFeld;
+float fullLength;
 
 - (void) awakeFromNib 
 {
@@ -41,7 +42,7 @@
 
 - (IBAction)getFullLength:(id)sender 
 {
-    float fullLength = [sender floatValue];
+    fullLength = [sender floatValue];
     [self.einFeld setTotalLength:fullLength];
     NSLog (@"Length= %1.2f", fullLength);
     [self updateUserInterface];
@@ -49,14 +50,18 @@
 
 - (IBAction)avF:(id)sender 
 {
-    float dis = [self.einFeld calcDist];
-    NSLog (@"dis= %1.2f", dis);
+    float dis = [sender floatValue];
+    [self.einFeld setRatio:(dis/fullLength)];
+    [self updateUserInterface];
 }
 
 - (void) updateUserInterface
 {
     float av = [self.einFeld avLength];
     float bv = [self.einFeld bvLength];
+    float dis = [self.einFeld calcDist];
+    [self.avF setFloatValue:dis];  
+    [self.slider setFloatValue:dis/fullLength];  
     [self.einFeld calculatePartialStress];
     if (av >= 0) 
     {

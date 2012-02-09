@@ -18,7 +18,7 @@
 
 - (void) calculatePartialStress 
 {
-float bv = (ratio*totalLength) * last / totalLength;
+float bv = [self calcDist] * last / totalLength;
     float av = last - bv;
     bvLength = bv;
     avLength = av;

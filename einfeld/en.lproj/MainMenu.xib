@@ -1549,15 +1549,14 @@
 						<object class="NSTextField" id="838076184">
 							<reference key="NSNextResponder" ref="439893737"/>
 							<int key="NSvFlags">268</int>
-							<string key="NSFrame">{{192, 217}, {96, 22}}</string>
+							<string key="NSFrame">{{192, 112}, {96, 22}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<reference key="NSNextKeyView" ref="942099521"/>
 							<string key="NSReuseIdentifierKey">_NS:903</string>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSTextFieldCell" key="NSCell" id="8342322">
 								<int key="NSCellFlags">-1804468671</int>
-								<int key="NSCellFlags2">-2009070592</int>
-								<string key="NSContents">Av-F</string>
+								<int key="NSCellFlags2">138413056</int>
 								<reference key="NSSupport" ref="63518916"/>
 								<object class="NSNumberFormatter" key="NSFormatter" id="589116037">
 									<dictionary class="NSMutableDictionary" key="NS.attributes">
