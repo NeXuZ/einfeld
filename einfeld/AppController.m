@@ -13,6 +13,8 @@
 @implementation AppController
 @synthesize lastBv;
 @synthesize lastAv;
+@synthesize avF;
+@synthesize slider;
 @synthesize einFeld = _einFeld;
 
 - (void) awakeFromNib 
@@ -48,6 +50,7 @@
 - (IBAction)avF:(id)sender 
 {
     float dis = [self.einFeld calcDist];
+    NSLog (@"dis= %1.2f", dis);
 }
 
 - (void) updateUserInterface

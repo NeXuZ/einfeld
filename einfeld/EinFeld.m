@@ -25,9 +25,9 @@ float bv = (ratio*totalLength) * last / totalLength;
 
 };
 
-- (void) calcDist
+- (float) calcDist
 {
-    float dist = (ratio*totalLength);
+    return (ratio*totalLength);
 }
 
 @end

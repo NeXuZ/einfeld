@@ -18,4 +18,6 @@
 
 
 - (void) calculatePartialStress;
+- (float) calcDist;
+
 @end

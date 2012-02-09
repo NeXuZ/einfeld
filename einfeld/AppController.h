@@ -14,6 +14,9 @@
 
 @property (weak) IBOutlet NSTextField *lastBv;
 @property (weak) IBOutlet NSTextField *lastAv;
+@property (weak) IBOutlet NSTextField *avF;
+@property (weak) IBOutlet NSSlider *slider;
+
 @property (strong) EinFeld *einFeld;
 
 - (IBAction)getLast:(id)sender;

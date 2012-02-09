@@ -1555,7 +1555,7 @@
 							<string key="NSReuseIdentifierKey">_NS:903</string>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSTextFieldCell" key="NSCell" id="8342322">
-								<int key="NSCellFlags">-2077098431</int>
+								<int key="NSCellFlags">-1804468671</int>
 								<int key="NSCellFlags2">-2009070592</int>
 								<string key="NSContents">Av-F</string>
 								<reference key="NSSupport" ref="63518916"/>
@@ -1600,6 +1600,8 @@
 								<string key="NSPlaceholderString">Av-F</string>
 								<string key="NSCellIdentifier">_NS:903</string>
 								<reference key="NSControlView" ref="838076184"/>
+								<bool key="NSDrawsBackground">YES</bool>
+								<int key="NSTextBezelStyle">1</int>
 								<reference key="NSBackgroundColor" ref="994908022"/>
 								<reference key="NSTextColor" ref="155144903"/>
 							</object>
@@ -2421,6 +2423,22 @@
 						<reference key="destination" ref="838076184"/>
 					</object>
 					<int key="connectionID">582</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">avF</string>
+						<reference key="source" ref="323436491"/>
+						<reference key="destination" ref="838076184"/>
+					</object>
+					<int key="connectionID">583</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">slider</string>
+						<reference key="source" ref="323436491"/>
+						<reference key="destination" ref="942099521"/>
+					</object>
+					<int key="connectionID">584</int>
 				</object>
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -3748,7 +3766,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">582</int>
+			<int key="maxID">584</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes"/>
 		<int key="IBDocument.localizationMode">0</int>
