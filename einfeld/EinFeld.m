@@ -22,6 +22,7 @@ float bv = [self calcDist] * last / totalLength;
     float av = last - bv;
     bvLength = bv;
     avLength = av;
+    
 
 };
 

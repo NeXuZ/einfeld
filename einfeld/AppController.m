@@ -16,6 +16,8 @@
 @synthesize lastAv;
 @synthesize avF;
 @synthesize slider;
+@synthesize avF2;
+@synthesize slider2;
 @synthesize einFeld = _einFeld;
 float fullLength;
 
@@ -52,8 +54,26 @@ float fullLength;
 - (IBAction)avF:(id)sender 
 {
     float dis = [sender floatValue];
-    [self.einFeld setRatio:(dis/fullLength)];
-    [self updateUserInterface];
+    if (dis >= 0 <= fullLength)
+        {
+            [self.einFeld setRatio:(dis/fullLength)];
+            [self updateUserInterface];
+        }
+    else
+        {
+            [self.einFeld setRatio:0];
+            [self updateUserInterface];        
+
+        };
+};
+
+- (IBAction)getLast2:(id)sender {
+}
+
+- (IBAction)getRatio2:(id)sender {
+}
+
+- (IBAction)avF2:(id)sender {
 }
 
 - (void) updateUserInterface
