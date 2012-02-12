@@ -11,24 +11,28 @@
 @implementation EinFeld
 @synthesize totalLength;
 @synthesize last;
+@synthesize last2;
 @synthesize ratio;
+@synthesize ratio2;
 @synthesize bvLength;
 @synthesize avLength;
-@synthesize dist;
 
 - (void) calculatePartialStress 
 {
-float bv = [self calcDist] * last / totalLength;
-    float av = last - bv;
+    float bv = ([self calcDist] * last) + ([self calcDist2] * last2) / totalLength;
+    float av = (last + last2) - bv;
     bvLength = bv;
     avLength = av;
-    
-
 };
 
 - (float) calcDist
 {
     return (ratio*totalLength);
-}
+};
+
+- (float) calcDist2
+{
+    return (ratio2*totalLength);
+};
 
 @end

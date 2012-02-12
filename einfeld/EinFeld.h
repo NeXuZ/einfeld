@@ -11,13 +11,14 @@
 @interface EinFeld : NSObject
 @property (assign) float totalLength;
 @property (assign) float last;
+@property (assign) float last2;
 @property (assign) float ratio;
+@property (assign) float ratio2;
 @property (assign) float bvLength;
 @property (assign) float avLength;
-@property (assign) float dist;
-
 
 - (void) calculatePartialStress;
 - (float) calcDist;
+- (float) calcDist2;
 
 @end
