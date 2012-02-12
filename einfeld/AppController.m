@@ -11,7 +11,7 @@
 #import "AppDelegate.h"
 #import "EinFeld.h"
 
-@implementation AppController
+@implementation AppController;
 @synthesize lastBv;
 @synthesize lastAv;
 @synthesize avF;
@@ -22,12 +22,13 @@
 @synthesize einFeld = _einFeld;
 
 float fullLength;
+float ratio;
+float ratio2;
 
 - (void) awakeFromNib 
 {
     EinFeld *aEinFeld = [[EinFeld alloc] init];
     self.einFeld = aEinFeld;
-    
 };
 
 - (IBAction)getLast:(id)sender 
@@ -40,7 +41,7 @@ float fullLength;
 
 - (IBAction)getRatio:(id)sender 
 {
-    float ratio = [sender floatValue];
+    ratio = [sender floatValue];
     [self.einFeld setRatio:ratio];
     NSLog (@"Ratio= %1.2f", ratio);
     [self updateUserInterface];
@@ -82,7 +83,7 @@ float fullLength;
 
 - (IBAction)getRatio2:(id)sender 
 {
-    float ratio2 = [sender floatValue];
+    ratio2 = [sender floatValue];
     [self.einFeld setRatio2:ratio2];
     NSLog (@"Ratio2= %1.2f", ratio2);
     [self updateUserInterface];
@@ -108,19 +109,19 @@ float fullLength;
 
 - (void) updateUserInterface
 {
-    float av = [self.einFeld avLength];
-    float bv = [self.einFeld bvLength];
+    float av4 = [self.einFeld avLength];
+    float bv4 = [self.einFeld bvLength];
     float dis = [self.einFeld calcDist];
     float dis2 = [self.einFeld calcDist2];
     [self.avF setFloatValue:dis];
     [self.avF2 setFloatValue:dis2];
-    [self.slider setFloatValue:dis/fullLength];
-    [self.slider2 setFloatValue:dis2/fullLength];
+    [self.slider setFloatValue:ratio];
+    [self.slider2 setFloatValue:ratio2];
     [self.einFeld calculatePartialStress];
-    if (av >= 0)
+    if (av4 >= 0)
     {
-        [self.lastBv setFloatValue:bv];
-        [self.lastAv setFloatValue:av];
+        [self.lastBv setFloatValue:bv4];
+        [self.lastAv setFloatValue:av4];
     };
 };
 

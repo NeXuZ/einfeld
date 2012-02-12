@@ -8,7 +8,7 @@
 
 #import "EinFeld.h"
 
-@implementation EinFeld
+@implementation EinFeld;
 @synthesize totalLength;
 @synthesize last;
 @synthesize last2;
@@ -19,8 +19,8 @@
 
 - (void) calculatePartialStress 
 {
-    float bv = ([self calcDist] * last) + ([self calcDist2] * last2) / totalLength;
-    float av = (last + last2) - bv;
+    float av = (([self calcDist] * last) + ([self calcDist2] * last2)) / totalLength;
+    float bv = (last + last2) - av;
     bvLength = bv;
     avLength = av;
 };
