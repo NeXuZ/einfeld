@@ -115,8 +115,8 @@ float ratio2;
     float dis2 = [self.einFeld calcDist2];
     [self.avF setFloatValue:dis];
     [self.avF2 setFloatValue:dis2];
-    [self.slider setFloatValue:ratio];
-    [self.slider2 setFloatValue:ratio2];
+    [self.slider setFloatValue:(dis/fullLength)];
+    [self.slider2 setFloatValue:(dis2/fullLength)];
     [self.einFeld calculatePartialStress];
     if (av4 >= 0)
     {
